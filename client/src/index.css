@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+@theme {
+  --color-primary: #2563EB;
+  --color-primary-dull: #1F58D8;
+  --color-light: #F1F5F9;
+  --color-borderColor: #c4c7d2;
+}
+.booked-date {
+  background-color: #fecaca !important;
+  color: #b91c1c !important;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--disabled {
+  color: #ccc !important;
+  text-decoration: line-through;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}

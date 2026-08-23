@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.env
+
+server/configs/google-key.json
+server/config/google-*.json
+
+client/dist/
+
+.idea/
+
+flutter/
