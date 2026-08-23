@@ -26,7 +26,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 // ✅ Health check
-app.get("/", (req, res) => res.send("Server is running"));
+const clientPath = path.join(process.cwd(), "../client/dist");
+
+app.use(express.static(clientPath));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(clientPath, "index.html"));
+});
 
 // --------------------
 // API Routes
