@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // ✅ Create axios instance with baseURL
 const instance = axios.create({
-  baseURL: "http://localhost:3000", // 👈 backend URL
+  baseURL: "https://carrental1-8c17.onrender.com", // 👈 backend URL
 });
 
 instance.interceptors.request.use((config) => {
